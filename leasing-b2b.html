@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dienstrad- &amp; E-Bike-Leasing für Unternehmen – Radwerk Mitte</title>
+  <meta name="description" content="Dienstrad-Leasing für Unternehmen: Monatsrate berechnen, Ablauf verstehen, unverbindlich anfragen. Radwerk Mitte begleitet Sie von der Beratung bis zur Übergabe.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <span class="standort">Kassel: <a href="tel:+495619876540">0561 98765-40</a></span>
+        <span class="standort">Göttingen: <a href="tel:+495519876540">0551 98765-40</a></span>
+        <a href="https://shop.radwerk-mitte-beispiel.de" target="_blank" rel="noopener">Zum Online-Shop ↗</a>
+      </div>
+    </div>
+    <div class="container main-nav-wrapper">
+      <a href="index.html" class="logo">Radwerk <span>Mitte</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true">☰</span> Menü
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="leasing-b2b.html" aria-current="page">B2B &amp; Leasing</a></li>
+          <li><a href="privatkunden.html">Privatkunden</a></li>
+          <li><a href="werkstatt.html">Werkstatt</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Start</a> › B2B &amp; Leasing</p>
+        <h1>Dienstrad- und E-Bike-Leasing für Unternehmen</h1>
+        <p class="lead">Mehr Zufriedenheit im Team, ein planbarer Kostenrahmen und ein fester Ansprechpartner bei Radwerk Mitte – von der ersten Anfrage bis zur Übergabe der Räder.</p>
+        <a class="btn btn-primary" href="kontakt.html?anfrageart=b2b-leasing#kontaktformular">Unverbindlich anfragen</a>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-title">So läuft die Zusammenarbeit ab</h2>
+        <ol class="steps">
+          <li><strong>Anfrage senden</strong><p>Über den Rechner oder das Kontaktformular – mit Rad, Anzahl und gewünschter Laufzeit.</p></li>
+          <li><strong>Beratungsgespräch</strong><p>Ihr fester Ansprechpartner bespricht Konditionen und Ablauf mit Ihnen.</p></li>
+          <li><strong>Angebot &amp; Vertrag</strong><p>Sie erhalten ein transparentes Angebot für Ihr Unternehmen.</p></li>
+          <li><strong>Übergabe &amp; Service</strong><p>Räder werden übergeben, Service läuft in Kassel und Göttingen weiter.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="rechner">
+      <div class="container">
+        <h2 class="section-title">Leasing-Rechner <span class="badge-unverbindlich">Unverbindlich</span></h2>
+        <p class="lead">Schätzen Sie die Monatsrate pro Rad ab. Die Werte dienen zur Orientierung; die tatsächlichen Konditionen legt Radwerk gemeinsam mit der Leasinggesellschaft fest.</p>
+
+        <form class="calculator" id="leasing-calc">
+          <div>
+            <div class="calc-field">
+              <label for="calc-price">Radpreis pro Fahrrad (Brutto, €)</label>
+              <input type="number" id="calc-price" name="radpreis" min="300" max="15000" step="50" value="2500" inputmode="numeric">
+              <p class="hint">Listenpreis des gewünschten Rads oder E-Bikes.</p>
+            </div>
+            <div class="calc-field">
+              <label for="calc-count">Anzahl Räder</label>
+              <input type="number" id="calc-count" name="anzahl" min="1" max="500" step="1" value="10" inputmode="numeric">
+              <p class="hint">Geplante Anzahl an Leasing-Rädern für Ihr Unternehmen.</p>
+            </div>
+            <div class="calc-field">
+              <label for="calc-duration">Laufzeit</label>
+              <select id="calc-duration" name="laufzeit">
+                <option value="36">36 Monate</option>
+                <option value="48" selected>48 Monate</option>
+                <option value="60">60 Monate</option>
+              </select>
+              <p class="hint">Übliche Laufzeiten im Dienstrad-Leasing.</p>
+            </div>
+          </div>
+
+          <div class="calc-result">
+            <p class="mt-0">Geschätzte Monatsrate pro Rad</p>
+            <p class="rate" id="calc-result-value" aria-live="polite">0,00 €</p>
+            <p id="calc-result-summary"></p>
+            <p id="calc-result-total" aria-live="polite"></p>
+            <button type="button" class="btn btn-primary btn-block" id="calc-to-inquiry">Diese Berechnung als Anfrage senden</button>
+            <p class="calc-disclaimer">Modellrechnung ohne Berücksichtigung von Gehaltsumwandlung oder individuellen Tarifen. Enthält pauschal Versicherung und Service. Endgültige Konditionen erhalten Sie im persönlichen Beratungsgespräch.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Häufige Fragen zum B2B-Leasing</h2>
+        <div class="faq-item-wrapper">
+          <details class="faq-item">
+            <summary>Ab wie vielen Mitarbeitenden lohnt sich Dienstrad-Leasing?</summary>
+            <div class="faq-body">Es gibt keine feste Untergrenze. Wir beraten sowohl kleinere Teams als auch Unternehmen mit mehreren hundert Beschäftigten individuell.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Was passiert bei Reparaturen während der Laufzeit?</summary>
+            <div class="faq-body">Service und Reparaturen laufen über unsere Werkstätten in Kassel und Göttingen. Details zum Umfang klären wir im Beratungsgespräch.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Wie lange dauert es bis zur Übergabe der Räder?</summary>
+            <div class="faq-body">Das hängt von Stückzahl und Verfügbarkeit ab. Nach dem Beratungsgespräch nennen wir Ihnen einen verbindlichen Zeitrahmen.</div>
+          </details>
+        </div>
+        <p><a href="faq.html">Alle Fragen &amp; Antworten ansehen →</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container text-center">
+        <h2 class="section-title">Bereit für den nächsten Schritt?</h2>
+        <p class="lead" style="margin-inline:auto">Senden Sie uns Ihre Anfrage – unverbindlich und mit persönlicher Rückmeldung von Ihrem Ansprechpartner bei Radwerk Mitte.</p>
+        <a class="btn btn-primary" href="kontakt.html?anfrageart=b2b-leasing#kontaktformular">Jetzt B2B-Anfrage senden</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Radwerk Mitte</h2>
+        <p>Fahrrad &amp; E-Bike seit 1989. Verkauf, Werkstatt und B2B-Leasing in Kassel und Göttingen.</p>
+      </div>
+      <div>
+        <h2>Standort Kassel</h2>
+        <address style="font-style: normal">
+          Musterstraße 1, 34117 Kassel<br>
+          <a href="tel:+495619876540">0561 98765-40</a>
+        </address>
+      </div>
+      <div>
+        <h2>Standort Göttingen</h2>
+        <address style="font-style: normal">
+          Musterallee 2, 37073 Göttingen<br>
+          <a href="tel:+495519876540">0551 98765-40</a>
+        </address>
+      </div>
+      <div>
+        <h2>Service</h2>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="https://shop.radwerk-mitte-beispiel.de" target="_blank" rel="noopener">Online-Shop ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Radwerk Mitte GmbH (fiktives Übungsunternehmen)</p>
+      <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

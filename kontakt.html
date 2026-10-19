@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – Radwerk Mitte</title>
+  <meta name="description" content="Kontaktieren Sie Radwerk Mitte für B2B-Leasing, Werkstatttermine oder Beratung – in Kassel und Göttingen.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <span class="standort">Kassel: <a href="tel:+495619876540">0561 98765-40</a></span>
+        <span class="standort">Göttingen: <a href="tel:+495519876540">0551 98765-40</a></span>
+        <a href="https://shop.radwerk-mitte-beispiel.de" target="_blank" rel="noopener">Zum Online-Shop ↗</a>
+      </div>
+    </div>
+    <div class="container main-nav-wrapper">
+      <a href="index.html" class="logo">Radwerk <span>Mitte</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true">☰</span> Menü
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="leasing-b2b.html">B2B &amp; Leasing</a></li>
+          <li><a href="privatkunden.html">Privatkunden</a></li>
+          <li><a href="werkstatt.html">Werkstatt</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Start</a> › Kontakt</p>
+        <h1>Kontakt</h1>
+        <p class="lead">Wählen Sie Ihre Anfrageart – wir leiten Ihre Nachricht direkt an die richtige Ansprechperson weiter.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div style="display:grid; gap:2.5rem; grid-template-columns: 1fr;" id="kontaktformular-bereich">
+          <div>
+            <h2 class="section-title" id="kontaktformular-titel">Anfrage senden</h2>
+            <div class="form-note">
+              Für dringende Anliegen erreichen Sie uns auch telefonisch: Kassel <a href="tel:+495619876540">0561 98765-40</a>, Göttingen <a href="tel:+495519876540">0551 98765-40</a>.
+            </div>
+
+            <form id="kontaktformular" novalidate>
+              <div class="form-grid two-col">
+                <div class="field full">
+                  <label for="anfrageart">Anfrageart <span class="required">*</span></label>
+                  <select id="anfrageart" name="anfrageart" required>
+                    <option value="b2b-leasing">B2B-Leasing für Unternehmen</option>
+                    <option value="werkstatt-termin">Werkstatttermin</option>
+                    <option value="privatkunden-beratung">Beratung für Privatkunden</option>
+                    <option value="sonstiges">Sonstiges</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="name">Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="email">E-Mail <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="field">
+                  <label for="telefon">Telefon</label>
+                  <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+                  <p class="hint">Optional, für Rückfragen.</p>
+                </div>
+
+                <div class="field" data-show-for="b2b-leasing">
+                  <label for="unternehmen">Unternehmen <span class="required">*</span></label>
+                  <input type="text" id="unternehmen" name="unternehmen" data-required-when-visible="true">
+                </div>
+                <div class="field" data-show-for="b2b-leasing">
+                  <label for="mitarbeiterzahl">Anzahl Mitarbeitende (ungefähr)</label>
+                  <input type="number" id="mitarbeiterzahl" name="mitarbeiterzahl" min="1">
+                </div>
+
+                <div class="field" data-show-for="werkstatt-termin">
+                  <label for="radmodell">Rad-Modell</label>
+                  <input type="text" id="radmodell" name="radmodell">
+                </div>
+                <div class="field" data-show-for="werkstatt-termin">
+                  <label for="wunschtermin">Wunschtermin</label>
+                  <input type="date" id="wunschtermin" name="wunschtermin">
+                </div>
+
+                <div class="field" data-show-for="b2b-leasing,werkstatt-termin,privatkunden-beratung">
+                  <label for="standort">Bevorzugter Standort</label>
+                  <select id="standort" name="standort">
+                    <option value="kassel">Kassel</option>
+                    <option value="goettingen">Göttingen</option>
+                    <option value="egal">Kein Unterschied</option>
+                  </select>
+                </div>
+
+                <div class="field full">
+                  <label for="nachricht">Ihre Nachricht <span class="required">*</span></label>
+                  <textarea id="nachricht" name="nachricht" required></textarea>
+                </div>
+
+                <div class="field full">
+                  <label>
+                    <input type="checkbox" required name="datenschutz" style="width:auto; display:inline-block; vertical-align:middle;">
+                    Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage einverstanden. <span class="required">*</span>
+                  </label>
+                </div>
+
+                <div class="field full">
+                  <button type="submit" class="btn btn-primary">Anfrage senden</button>
+                </div>
+              </div>
+            </form>
+
+            <div class="form-success" id="form-success" tabindex="-1" role="status">
+              <strong>Vielen Dank für Ihre Anfrage.</strong>
+              <p>Ihr E-Mail-Programm öffnet sich, damit Sie die Anfrage absenden können. Wir melden uns zeitnah bei Ihnen – bei Verzögerungen informieren wir Sie vorab.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Unsere Standorte</h2>
+        <div class="standorte-grid">
+          <div class="standort-card">
+            <h2>Radwerk Mitte Kassel</h2>
+            <p>Musterstraße 1, 34117 Kassel</p>
+            <p><a class="phone" href="tel:+495619876540">0561 98765-40</a></p>
+          </div>
+          <div class="standort-card">
+            <h2>Radwerk Mitte Göttingen</h2>
+            <p>Musterallee 2, 37073 Göttingen</p>
+            <p><a class="phone" href="tel:+495519876540">0551 98765-40</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Radwerk Mitte</h2>
+        <p>Fahrrad &amp; E-Bike seit 1989. Verkauf, Werkstatt und B2B-Leasing in Kassel und Göttingen.</p>
+      </div>
+      <div>
+        <h2>Standort Kassel</h2>
+        <address style="font-style: normal">
+          Musterstraße 1, 34117 Kassel<br>
+          <a href="tel:+495619876540">0561 98765-40</a>
+        </address>
+      </div>
+      <div>
+        <h2>Standort Göttingen</h2>
+        <address style="font-style: normal">
+          Musterallee 2, 37073 Göttingen<br>
+          <a href="tel:+495519876540">0551 98765-40</a>
+        </address>
+      </div>
+      <div>
+        <h2>Service</h2>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="https://shop.radwerk-mitte-beispiel.de" target="_blank" rel="noopener">Online-Shop ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Radwerk Mitte GmbH (fiktives Übungsunternehmen)</p>
+      <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
