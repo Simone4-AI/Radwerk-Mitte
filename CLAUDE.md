@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Projektstatus
 
-Noch kein Code, kein Git-Repo, kein Build-/Test-Setup. Der Ordner enthält nur Konzeptunterlagen (PDF) für einen Website-Relaunch. Sobald ein Tech-Stack festgelegt ist, hier Build-, Lint- und Test-Befehle ergänzen.
+Git-Repo ist eingerichtet. `PRD.md` liegt vor (Übertragung aus `PRD_Radwerk.pdf`, dem maßgeblichen PRD). Noch kein Build-/Test-Setup. Der Ordner enthält außerdem Konzeptunterlagen (PDF) und einen statischen HTML/CSS/JS-Klickdummy für den Website-Relaunch. Sobald ein Tech-Stack festgelegt ist, hier Build-, Lint- und Test-Befehle ergänzen.
 
 Kontext: Übungsprojekt im Kurs „Vibe Engineering / Agentic Engineering“ (KI-Vertiefungskurs). Radwerk Mitte GmbH ist eine **fiktive Übungsfirma** – alle Personen, Zahlen und Kunden sind erfunden.
 
