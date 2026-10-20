@@ -1,0 +1,33 @@
+# Umgebungsvariablen & Zugangsdaten
+.env
+.env.*
+!.env.example
+*secret*
+*credentials*
+*.pem
+*.key
+
+# WordPress-Konfiguration (Zielarchitektur laut TECH.md)
+wp-config.php
+.htpasswd
+
+# Datenbank-Dumps / Backups
+*.sql
+*.sqlite
+*.bak
+
+# Abhängigkeiten / Build-Artefakte
+node_modules/
+vendor/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor- & OS-Dateien
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
