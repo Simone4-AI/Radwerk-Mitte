@@ -120,6 +120,7 @@ a:hover {
 
 .main-nav-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-block: 0.75rem;
@@ -183,6 +184,10 @@ a:hover {
 }
 
 @media (min-width: 900px) {
+  .main-nav-wrapper {
+    flex-wrap: nowrap;
+  }
+
   .nav-toggle {
     display: none;
   }
